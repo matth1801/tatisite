@@ -1,0 +1,58 @@
+/* Estiliza o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    }
+    /* Estilização do contâiner do carrossel */
+    .carousel {
+    position: relative; /* Permite posicionamento absoluto dos botões */
+    width: 80%;
+    max-width: 800px; /* Limita a largura máxima */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassa o limite */
+    border-radius: 10px; /* Cantos arredondados */
+    }
+    /* Define o layout das imagens no carrossel */
+    .carousel-images {
+    display: flex; /* Exibe as imagens lado a lado */
+    transition: transform 0.5s ease; /* Efeito de transição suave ao mudar a imagem */
+    }
+    /* Define o tamanho das imagens */
+    .carousel-images img {
+    width: 100%; /* Ocupa 100% da largura do contâiner */
+    border-radius: 10px; /* Cantos arredondados */
+    }
+    /* Estilização dos botões de navegação */
+    button {
+    position: absolute;
+    top: 50%; /* centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta perfeitamente ao centro */
+    background-color: rgba(0,0,0,0.5);
+    /* Fundo semitransparente */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%; /* botões circulares */
+    }
+    /* Posição do botão "prev" (anterior) */
+    .prev {
+    left: 10px;}
+    /* Posição do botão next (próximo) */
+    .next {
+    right: 10px;
+    }
+    /* Estilo do botão ao passar o mouse */
+    button :hover {
+    background-color: rgba(0,0,0,0,0.8); /* Aumenta a opacidade do fundo */
+    }
+    
+    /*Estilo do botão ao passar o mouse*/
+    button:hover{
+    background-color:rgba(0,0,0,0.8)
+    /*Aumenta a opacidade do fundo*/
+    }
